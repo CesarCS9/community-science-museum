@@ -4,41 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Community Science Museum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="hero hero-home">
     <nav>
       <a href="index.html">
-        <span>Community science museum</span>
+        <span class="logo">
+          Community science <span class="highlight">museum</span>
+        </span>
       </a>
-      <ul>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+      </label>
+      <ul class="nav-links">
         <li><a href="pages/exhibitions.html">Exhibitions</a></li>
         <li><a href="pages/explore.html">Explore</a></li>
         <li><a href="pages/visit.html">Visit</a></li>
         <li><a href="pages/about.html">About us</a></li>
         <li><a href="pages/visit.html">Plan your visit</a></li>
       </ul>
-      <img src="assets/images/home/home-hero.jpg" alt="">
-      <p>Explore science together</p>
     </nav>
+    <div class="hero-text">
+      <h1>
+        <span class="highlight">Explore</span>
+        <span>science together</span>
+      </h1>
+    </div>
   </header>
   <main>
     <section>
-      <h1>Discover the museum</h1>
+      <h2>Discover the museum</h2>
       <div>
         <div>
           <img src="assets/images/home/home-card-exhibition.jpg" alt="">
-          <h2>Interactive exhibitions</h2>
+          <h3>Interactive exhibitions</h3>
           <p>Explore hands on exhibits that bring science to life</p>
         </div>
         <div>
           <img src="assets/images/home/home-card-explore.jpg" alt="">
-          <h2>Learn by playing</h2>
+          <h3>Learn by playing</h3>
           <p>Discover science through fun activities and experiments</p>
         </div>
         <div>
           <img src="assets/images/home/home-card-visit.jpg" alt="">
-          <h2>Plan your visit</h2>
+          <h3>Plan your visit</h3>
           <p>Find opening hours, location and visitor information</p>
         </div>
       </div>
@@ -65,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="museum-invite">
       <h4>Discover science like never before</h4>
       <p>Visit the Community Science Museum with your family</p>
       <a href="pages/explore.html">Explore the museum</a>
@@ -74,10 +87,11 @@
   </main>
   <footer>
     <div>
-      <span>Community Science Museum</span>
+      <span class="logo">
+        Community Science <span class="highlight">museum</span>
+      </span>
       <p>&copy; 2026 Community science museum. All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>

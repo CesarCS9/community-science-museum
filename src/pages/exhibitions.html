@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Exhibitions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="hero hero-exhibitions">
     <nav>
         <a href="/src/index.html">
-            <span>Community science museum</span>
+            <span class="logo">
+                Community science <span class="highlight">museum</span>
+            </span>
         </a>
-        <ul>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+        </label>
+        <ul class="nav-links">
             <li><a href="/src/pages/exhibitions.html">Exhibitions</a></li>
             <li><a href="/src/pages/explore.html">Explore</a></li>
             <li><a href="/src/pages/visit.html">Visit</a></li>
             <li><a href="/src/pages/about.html">About us</a></li>
             <li><a href="/src/pages/visit.html">Plan your visit</a></li>
         </ul>
-        <img src="/src/assets/images/exhibition/exhibition-hero.jpg" alt="">
-        <p>Experience science together</p>
     </nav>
+    <div class="hero-text">
+        <h1>
+            <span class="highlight">Experience</span>
+            <span>science exhibitions</span>
+        </h1>
+    </div>
   </header>
   <main>
     <section>
@@ -84,7 +96,9 @@
   </main>
   <footer>
     <div>
-      <span>Community Science Museum</span>
+        <span class="logo">
+            Community science <span class="highlight">museum</span>
+        </span>
       <p>&copy; 2026 Community science museum. All rights reserved.</p>
     </div>
   </footer>
