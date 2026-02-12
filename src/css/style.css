@@ -2,13 +2,15 @@
 
 .logo {
     font-family: 'Righteous','Trebuchet MS', cursive;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #ffffff;
 }
 
 .highlight {
     color: #FF6B6B;
 }
+
+/* nav bar */
 
 nav{
     display: flex;
@@ -33,9 +35,15 @@ nav a{
 }
 
 .menu-icon{
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     color: black;
     cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 #menu-toggle {
@@ -52,22 +60,6 @@ nav a{
     background: rgba(0,0,0,0.9);
     width: 100%;
     padding: 2rem;
-}
-
-
-nav ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    font-size: 2rem;
 }
 
 
@@ -110,13 +102,16 @@ nav p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.8rem;
     gap: 0.5rem;
 }
+
+/* General */
 
 body{
     margin: 0;
     font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
     overflow-x: hidden; /*temporary*/
 }
 
@@ -124,11 +119,34 @@ h1,h2,h3,h4 {
     font-family: 'Lexend', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+p {
+  line-height: 1.5;
+}
+
+
+section {
+    padding-inline: 1.5rem;
+}
+
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
+
+.btn{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    background-color: #FEB21A;
+    color: black;
+    border-radius: 80px 0 80px 0;
+    font-family: 'Lexend';
+    
+}
+
+/* footer */
 
 footer{
     font-family: 'Questrial', 'Lucida Sans', Verdana, sans-serif;
@@ -136,3 +154,138 @@ footer{
     color: #ffffff;
 }
 
+.footer-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*home features*/
+
+.home-info{
+    padding: 0;
+}
+
+.home-features-header h2{
+    margin-block: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.home-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 0;
+    
+}
+
+.home-features img{
+    display: block;
+    width: 100%;
+}
+
+.home-features p{
+    margin: 20px;
+    padding: 10px;
+}
+
+.feature-home-card{
+    display: block;
+    align-items: center;
+    background-color: #FF6B6B;
+    border-radius: 80px 0 80px 0;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: 1rem;
+    padding-bottom: 1rem rem;
+}
+.feature-home-card-explore{
+    background-color: #15173D;
+    color: #ffffff;
+}
+.feature-home-card-visit{
+    background-color: #FDF0D5;
+}
+
+/*home info*/
+
+.home-about-thumbnail{
+    background-color: #4B88A2;
+    color: #ffffff;
+    padding-block: 2rem;
+    padding: 3rem 1.5rem;
+}
+
+.home-about-thumbnail img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;   
+}
+
+.visitor-info{
+    background-color: #15173D;
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+}
+
+.opening-hours h3,
+.location-info h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/*museum invite*/
+
+.museum-invite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0 0;
+}
+
+.invite-content {
+    padding: 0 1.5rem 4rem;
+}
+
+.museum-invite img {
+    width: 100%;
+}
+
+/*### EXHIBITION PAGE ###*/
+.exhibitions-section{
+    background-color: #15173D;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+.exhibitions-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.exhibition-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.exhibition-card img{
+    border-radius:20px 20px 0 0;
+    width: 100%;
+}
+
+.exhibition-card h3, p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
