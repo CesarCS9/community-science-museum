@@ -159,6 +159,11 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-layout p{
+    font-size: 0.7rem;
 }
 
 /*home features*/
@@ -224,11 +229,18 @@ footer{
     margin: 0 auto;
     border-radius: 20px;   
 }
+.home-about-thumbnail p{
+    padding-left: 0;
+}
 
 .visitor-info{
     background-color: #15173D;
     color: #ffffff;
     padding: 3rem 1.5rem;
+}
+
+.visitor-info p{
+    padding-left: 0;
 }
 
 .opening-hours h3,
@@ -245,11 +257,11 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 4rem 0 0;
+    padding: 2rem 0 0;
 }
 
 .invite-content {
-    padding: 0 1.5rem 4rem;
+    padding: 0 1.5rem 3rem;
 }
 
 .museum-invite img {
@@ -288,4 +300,128 @@ footer{
 .exhibition-card h3, p{
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+/* benefits section */
+
+
+.museum-benefits{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.museum-benefits h3{
+    font-size: 1rem;
+}
+
+.benefits-list{
+    padding: 0.5rem 0;
+}
+
+.benefits-item {
+    display: flex;
+    align-items: center; 
+}
+
+/* visit invitation */
+
+.visit-invite{
+    background-color: #FEB21A;
+}
+
+.visit-invite img{
+    border-radius: 80px 0 80px 0;
+}
+
+.visit-invite-content{
+    padding: 2rem 0;
+}
+
+.visit-invite-content h3{
+    font-size: 1rem;
+}
+.visit-invite-content p{
+    padding-left: 0;
+}
+
+.visit-call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+/*### EXPLORE PAGE ###*/
+
+.explore-events {
+    padding: 3rem 1rem;
+}
+
+.explore-events h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.events-grid{
+    display: grid;
+    gap: 3rem;
+}
+
+.event-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #15173D;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.event-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    padding: 1rem;
+}
+
+.event-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-body h4{
+    padding: 0 1rem;
+}
+
+.event-meta{
+    padding: 0 1rem;
+}
+
+.meta-item{
+    display: flex;
+    align-items: center;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FF6B6B;
+    font-weight: bold;
+}
+
+.event-date .month {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.event-date .weekday {
+    font-size: 2rem;
 }
