@@ -146,6 +146,29 @@ img {
     
 }
 
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.cta-content {
+    width: 100%;
+    padding: 2rem 0;
+    margin: auto;
+}
+
+.cta-media {
+    width: 100%;
+}
+
+.cta-section img {
+    width: 100%;
+    display: block;
+}
+
 /* footer */
 
 footer{
@@ -250,24 +273,6 @@ footer{
     margin-bottom: 1rem;
 }
 
-/*museum invite*/
-
-.museum-invite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem 0 0;
-}
-
-.invite-content {
-    padding: 0 1.5rem 3rem;
-}
-
-.museum-invite img {
-    width: 100%;
-}
-
 /*### EXHIBITION PAGE ###*/
 .exhibitions-section{
     background-color: #15173D;
@@ -324,34 +329,27 @@ footer{
     align-items: center; 
 }
 
-/* visit invitation */
+/* exhibition cta */
 
-.visit-invite{
+.exhibitions-cta .cta-top {
     background-color: #FEB21A;
+    padding: 2rem 1.5rem;
 }
-
-.visit-invite img{
+.exhibitions-cta img {
     border-radius: 80px 0 80px 0;
 }
-
-.visit-invite-content{
+.exhibitions-cta .cta-bottom {
     padding: 2rem 0;
+    text-align: center;
 }
 
-.visit-invite-content h3{
+.exhibitions-cta .cta-content {
+    text-align: center;
+}
+
+.exhibitions-cta .cta-top h3 {
     font-size: 1rem;
 }
-.visit-invite-content p{
-    padding-left: 0;
-}
-
-.visit-call{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-}
-
 
 /*### EXPLORE PAGE ###*/
 
@@ -376,6 +374,7 @@ footer{
     background-color: #15173D;
     color: #ffffff;
     border-radius: 20px;
+    padding: 1rem 0;
 }
 
 .event-header{
@@ -396,6 +395,9 @@ footer{
 }
 
 .event-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     padding: 0 1rem;
 }
 
@@ -403,6 +405,11 @@ footer{
     display: flex;
     align-items: center;
 }
+
+.meta-item p {
+    margin: 0;
+}
+
 
 .event-date {
     display: flex;
@@ -425,3 +432,78 @@ footer{
 .event-date .weekday {
     font-size: 2rem;
 }
+
+/*Explore cta*/
+.explore-cta {
+    background-color: #4B88A2;
+    color: white;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.explore-cta h2{
+    font-size: 1rem;
+}
+
+.explore-cta img {
+    border-radius: 80px 0 80px 0;
+}
+
+/*explore benefits*/
+
+.explore-benefits{
+    background-image: url("/src/assets/images/explore/explore-decorative-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    color: #ffffff;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.explore-benefits h2{
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+}
+
+.explore-benefits ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/*### VISIT PAGE ###*/
+
+.visit-location p{
+    padding-left: 0;
+}
+
+.visit-location img {
+    border-bottom: 2px solid black;
+    padding-bottom: 3rem;
+}
+
+/* how to get there */
+
+.transport-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.transport-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #4B88A2;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.transport-card img{
+    order: -1;
+    border-radius: 20px 20px 0 0;
+}
+
+

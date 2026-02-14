@@ -21,6 +21,7 @@
             <i class="fa-solid fa-bars" style="color: #000000;"></i>
         </label>
         <ul class="nav-links">
+            <li><a href="/src/index.html">Home</a></li>
             <li><a href="/src/pages/exhibitions.html">Exhibitions</a></li>
             <li><a href="/src/pages/explore.html">Explore</a></li>
             <li><a href="/src/pages/visit.html">Visit</a></li>
@@ -36,28 +37,30 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="visit-location">
             <h2>Location</h2>
             <p>The Community Science Museum is located in the city centre of Oslo, with easy access by public transport and nearby facilities for families and school groups.</p>
             <p>Galileo Avenue 8 - 0001 Oslo, Norway</p>
             <img src="/src/assets/images/visit/visit-map.jpg" alt="">
         </section>
-        <section>
+        <section class="visit-transport">
             <h2>How to get there</h2>
-            <div>
-                <h3>Public transport</h3>
-                <p>Easily accessible by metro, tram, and bus. The museum is a short walk from nearby public transport stops in central Oslo</p>
-                <img src="/src/assets/images/visit/visit-get-public-transport.jpg" alt="">
-            </div>
-            <div>
-                <h3>Parking</h3>
-                <p>Limited street parking is available nearby. Several public parking garages can be found within walking distance of the museum</p>
-                <img src="/src/assets/images/visit/visit-get-parking.jpg" alt="">
-            </div>
-            <div>
-                <h3>School groups</h3>
-                <p>A designated drop-off area is available for school groups and guided visits, making arrival safe and convenient</p>
-                <img src="/src/assets/images/visit/visit-get-school-group.jpg" alt="">
+            <div class="transport-grid">
+                <div class="transport-card">
+                    <h3>Public transport</h3>
+                    <p>Easily accessible by metro, tram, and bus. The museum is a short walk from nearby public transport stops in central Oslo</p>
+                    <img src="/src/assets/images/visit/visit-get-public-transport.jpg" alt="">
+                </div>
+                <div class="transport-card">
+                    <h3>Parking</h3>
+                    <p>Limited street parking is available nearby. Several public parking garages can be found within walking distance of the museum</p>
+                    <img src="/src/assets/images/visit/visit-get-parking.jpg" alt="">
+                </div>
+                <div class="transport-card">
+                    <h3>School groups</h3>
+                    <p>A designated drop-off area is available for school groups and guided visits, making arrival safe and convenient</p>
+                    <img src="/src/assets/images/visit/visit-get-school-group.jpg" alt="">
+                </div>
             </div>
         </section>
         <section>
@@ -94,19 +97,19 @@
                 <p>Closed on Mondays</p>
             </div>
         </section>
-        <section>
+        <section class="cta-section visit-cta">
             <h2>Visit the Community Science Museum</h2>
-            <a href="about.html">About us</a>
+            <a href="about.html" class="btn">About us</a>
             <img src="/src/assets/images/visit/visit-decorative-image.jpg" alt="">
         </section>
     </main>
     <footer>
-        <div>
+        <div class="footer-layout">
         <span class="logo">
-          Community science <span class="highlight">museum</span>
+            Community Science <span class="highlight">museum</span>
         </span>
         <p>&copy; 2026 Community science museum. All rights reserved.</p>
         </div>
-    </footer> 
+    </footer>
 </body>
 </html>
