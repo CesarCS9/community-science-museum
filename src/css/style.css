@@ -16,7 +16,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem 0;
     position: relative;
 }
 
@@ -77,23 +77,28 @@ nav ul {
 }
 
 .hero-home{
-    background-image: url("../assets/images/home/home-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)),
+    url("../assets/images/home/home-hero.jpg");
 }
 
 .hero-exhibitions {
-    background-image: url("../assets/images/exhibition/exhibition-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)),
+    url("../assets/images/exhibition/exhibition-hero.jpg");
 }
 
 .hero-explore{
-    background-image: url("../assets/images/explore/explore-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)),
+    url("../assets/images/explore/explore-hero.jpg");
 }
 
 .hero-visit {
-    background-image: url("../assets/images/visit/visit-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)),
+    url("../assets/images/visit/visit-hero.jpg");
 }
 
 .hero-about{
-    background-image: url("../assets/images/about/about-hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)),
+    url("../assets/images/about/about-hero.jpg");
 }
 
 .hero-text{
@@ -144,6 +149,10 @@ img {
     border-radius: 80px 0 80px 0;
     font-family: 'Lexend';
     
+}
+
+.btn-coral{
+    background-color: #FF6B6B;
 }
 
 .cta-section {
@@ -499,6 +508,12 @@ footer{
     background-color: #4B88A2;
     border-radius: 20px;
     color: #ffffff;
+    
+}
+
+.transport-card h3{
+    padding-left: 1rem;
+    margin-bottom: 0;
 }
 
 .transport-card img{
@@ -506,4 +521,128 @@ footer{
     border-radius: 20px 20px 0 0;
 }
 
+/*Services and facilities*/
 
+.visit-info{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.visit-services{
+    background-color: #FF6B6B;
+    padding: 2rem 0;
+}
+
+.visit-services h2{
+    font-size: 1.3rem;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.visit-services ul{
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.visit-services li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.visit-hours{
+    padding: 2rem 0;
+    background-color: #15173D;
+    color: #ffffff;
+}
+
+.visit-hours h2{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.visit-hours p{
+    padding-left: 2rem;
+}
+
+/* visit-cta*/
+
+.visit-cta h2{
+    font-size: 1rem;
+}
+
+.visit-cta img{
+    padding-top: 2rem;
+}
+
+
+/*### ABOUT US PAGE ### */
+
+.about-mission{
+    padding: 2rem 1rem;
+}
+
+.about-mission h2{
+    font-size: 1.3rem;
+}
+
+.about-mission p{
+    margin: 0;
+    padding: 0;
+}
+
+.about-learning{
+    padding: 2rem 1rem;
+    background-color: #4B88A2;
+    color: #ffffff;
+}
+
+.about-learning h2{
+    font-size: 1.3rem;
+}
+
+.about-learning p{
+    padding: 0;
+}
+
+.about-contact{
+    background-color: #FDF0D5;
+    margin: 2rem 1rem;
+    padding: 0 0.5rem;
+
+}
+
+.contact-wrapper{
+    padding: 1rem 0;
+}
+
+.contact-wrapper h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 0.5rem;
+}
+
+.contact-form textarea{
+    min-height: 80px;
+}
+
+.contact-form button{
+    align-self:center;
+    border: none;
+}
