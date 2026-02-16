@@ -1,13 +1,25 @@
 /* Main stylesheet – SP1 Community Science Museum */
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-primary: #FEB21A;
+    --color-brand-accent: #FF6B6B;
+    --color-dark: #15173D;
+    --color-light:#4B88A2;
+
+    --font-body: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-heading: 'Lexend', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-logo: 'Righteous','Trebuchet MS', cursive;
+}
 
 .logo {
-    font-family: 'Righteous','Trebuchet MS', cursive;
+    font-family: var(--font-logo);
     font-size: 1.1rem;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .highlight {
-    color: #FF6B6B;
+    color: var(--color-brand-accent);
 }
 
 /* nav bar */
@@ -23,7 +35,7 @@ nav{
 nav a{
     font-family: 'Lexend', sans-serif;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .nav-links{
@@ -73,7 +85,7 @@ nav ul {
     background-repeat: no-repeat;
     position: relative;
     border-radius: 0 250px 0 250px;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .hero-home{
@@ -115,13 +127,13 @@ nav ul {
 
 body{
     margin: 0;
-    font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-body);
     font-size: 16px;
     overflow-x: hidden; /*temporary*/
 }
 
 h1,h2,h3,h4 {
-    font-family: 'Lexend', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-heading);
 }
 
 p {
@@ -144,15 +156,15 @@ img {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
-    background-color: #FEB21A;
-    color: black;
+    background-color: var(--color-primary);
+    color: var(--color-black);
     border-radius: 80px 0 80px 0;
     font-family: 'Lexend';
     
 }
 
 .btn-coral{
-    background-color: #FF6B6B;
+    background-color: var(--color-brand-accent);
 }
 
 .cta-section {
@@ -182,8 +194,8 @@ img {
 
 footer{
     font-family: 'Questrial', 'Lucida Sans', Verdana, sans-serif;
-    background-color: #15173D;
-    color: #ffffff;
+    background-color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .footer-layout{
@@ -237,7 +249,7 @@ footer{
     overflow: hidden;
     font-size: 1rem;
     margin: 1rem;
-    padding-bottom: 1rem rem;
+    padding-bottom: 1rem;
 }
 .feature-home-card-explore{
     background-color: #15173D;
@@ -645,4 +657,23 @@ footer{
 .contact-form button{
     align-self:center;
     border: none;
+}
+
+/*###### MEDIA QUERIES #####*/
+
+@media (min-width: 768px){
+    .logo {
+    font-size: 1.5rem;
+  }
+
+    .exhibitions-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+}
+
+@media (min-width: 1024px){
+
 }
