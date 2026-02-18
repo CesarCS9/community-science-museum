@@ -493,7 +493,7 @@ footer{
 /*explore benefits*/
 
 .explore-benefits{
-    background-image: url("/src/assets/images/explore/explore-decorative-background.jpg");
+    background-image: url("../assets/images/explore/explore-decorative-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
