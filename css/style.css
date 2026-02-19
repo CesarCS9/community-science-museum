@@ -82,6 +82,11 @@ nav ul {
     padding: 2rem;
 }
 
+.visually-hidden{
+    position: absolute;
+    left: -9999px;
+}
+
 
 .hero {
     display: flex;
