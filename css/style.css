@@ -143,7 +143,6 @@ body{
     margin: 0;
     font-family: var(--font-body);
     font-size: 16px;
-    overflow-x: hidden; /*temporary*/
 }
 
 h1,h2,h3,h4 {
