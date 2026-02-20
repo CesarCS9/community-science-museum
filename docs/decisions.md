@@ -12,3 +12,15 @@
 - Structured layouts in modular blocks to support responsive development
 - Organized image assets by page to simplify development workflow
 
+## Decisions - Week 3
+
+- Finished main layout for all pages
+
+- Implemented responsive design using media queries
+
+- Completed mobile, tablet, and desktop layouts
+
+- Validated HTML and CSS (no validation errors)
+
+- Improved accessibility using testing tools (WAVE)
+
