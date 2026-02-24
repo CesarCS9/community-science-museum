@@ -1,0 +1,92 @@
+/*home features*/
+
+.home-info{
+    padding: 0;
+}
+
+.home-features-header h2{
+    margin-block: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.home-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 0;
+    
+}
+
+.home-features img{
+    display: block;
+    width: 100%;
+}
+
+.home-features p{
+    margin: 20px;
+    padding: 10px;
+}
+
+.feature-home-card{
+    display: block;
+    align-items: center;
+    background-color: #FF6B6B;
+    border-radius: 80px 0 80px 0;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+.feature-home-card-explore{
+    background-color: #15173D;
+}
+
+.feature-home-card-explore h3{
+    color: #ffffff;
+}
+
+.feature-home-card-visit{
+    background-color: #FDF0D5;
+}
+
+.feature-item a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+/*home info*/
+
+.home-about-thumbnail{
+    background-color: #4B88A2;
+    color: #ffffff;
+    padding-block: 2rem;
+    padding: 3rem 1.5rem;
+}
+
+.home-about-thumbnail img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;   
+}
+.home-about-thumbnail p{
+    padding-left: 0;
+}
+
+.visitor-info{
+    background-color: #15173D;
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+}
+
+.visitor-info p{
+    padding-left: 0;
+}
+
+.opening-hours h3,
+.location-info h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+

@@ -1,0 +1,78 @@
+/*### EXHIBITION PAGE ###*/
+.exhibitions-section{
+    background-color: #15173D;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+.exhibitions-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.exhibition-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.exhibition-card img{
+    border-radius:20px 20px 0 0;
+    width: 100%;
+}
+
+.exhibition-card h3, p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* benefits section */
+
+
+.museum-benefits{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.museum-benefits h3{
+    font-size: 1rem;
+}
+
+.benefits-list{
+    padding: 0.5rem 0;
+}
+
+.benefits-item {
+    display: flex;
+    align-items: center; 
+}
+
+/* exhibition cta */
+
+.exhibitions-cta .cta-top {
+    background-color: #FEB21A;
+    padding: 2rem 1.5rem;
+}
+.exhibitions-cta img {
+    border-radius: 80px 0 80px 0;
+}
+.exhibitions-cta .cta-bottom {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.exhibitions-cta .cta-content {
+    text-align: center;
+}
+
+.exhibitions-cta .cta-top h3 {
+    font-size: 1rem;
+}
+

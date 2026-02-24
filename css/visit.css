@@ -1,0 +1,98 @@
+/*### VISIT PAGE ###*/
+
+.visit-location-wrapper {
+    border-bottom: 2px solid black;
+    margin: 0 1.5rem;
+    padding: 1.5rem 0;
+}
+
+
+.visit-location p{
+    padding-left: 0;
+}
+
+/* how to get there */
+
+.transport-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.transport-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #4B88A2;
+    border-radius: 20px;
+    color: #ffffff;
+    
+}
+
+.transport-card h3{
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.transport-card img{
+    order: -1;
+    border-radius: 20px 20px 0 0;
+}
+
+/*Services and facilities*/
+
+.visit-info{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.visit-services{
+    background-color: #FF6B6B;
+    padding: 2rem 0;
+}
+
+.visit-services h2{
+    font-size: 1.3rem;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.visit-services ul{
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.visit-services li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.visit-hours{
+    padding: 2rem 0;
+    background-color: #15173D;
+    color: #ffffff;
+}
+
+.visit-hours h2{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.visit-hours p{
+    padding-left: 2rem;
+}
+
+/* visit-cta*/
+
+.visit-cta h2{
+    font-size: 1rem;
+}
+
+.visit-cta img{
+    padding-top: 2rem;
+}
+
+

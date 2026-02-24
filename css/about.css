@@ -1,0 +1,70 @@
+/*### ABOUT US PAGE ### */
+
+.about-mission{
+    padding: 2rem 1rem;
+    background-color: #15173D;
+    color: #ffffff;
+}
+
+.about-mission h2{
+    font-size: 1.3rem;
+}
+
+.about-mission p{
+    margin: 0;
+    padding: 0;
+}
+
+.about-learning{
+    padding: 2rem 1rem;
+    background-color: #4B88A2;
+    color: #ffffff;
+}
+
+.about-learning h2{
+    font-size: 1.3rem;
+}
+
+.about-learning p{
+    padding: 0;
+}
+
+.about-contact{
+    background-color: #FDF0D5;
+    margin: 2rem 1rem;
+    padding: 0 0.5rem;
+
+}
+
+.contact-wrapper{
+    padding: 1rem 0;
+}
+
+.contact-wrapper h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 0.5rem;
+}
+
+.contact-form textarea{
+    min-height: 80px;
+}
+
+.contact-form button{
+    align-self:center;
+    border: none;
+}
+
