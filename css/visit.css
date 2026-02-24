@@ -6,6 +6,10 @@
     padding: 1.5rem 0;
 }
 
+.location-content{
+    padding-right: 1rem;
+}
+
 
 .visit-location p{
     padding-left: 0;
@@ -25,7 +29,10 @@
     background-color: #4B88A2;
     border-radius: 20px;
     color: #ffffff;
-    
+}
+
+.transport-card p{
+    padding:0 1rem;
 }
 
 .transport-card h3{
@@ -49,6 +56,10 @@
 .visit-services{
     background-color: #FF6B6B;
     padding: 2rem 0;
+}
+
+.visit-services p{
+    padding-left: 1rem;
 }
 
 .visit-services h2{

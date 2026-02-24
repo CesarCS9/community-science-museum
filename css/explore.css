@@ -24,6 +24,10 @@
     padding: 1rem 0;
 }
 
+.event-card p{
+    padding-left: 1rem;
+}
+
 .event-header{
     display: grid;
     grid-template-columns: 1fr 1fr;
