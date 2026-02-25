@@ -70,3 +70,16 @@
         Polish visual details and interactions
 
         Final review before submission
+
+## Week 4
+
+- Performed final responsive testing across devices and screen sizes
+- Improved navigation accessibility and semantic structure
+- Added image optimization and performance improvements
+- Validated accessibility using WAVE and Lighthouse
+- Finalized project documentation and report writing
+- Prepared GitHub repository and deployment for submission
+
+- Blockers: Only minor visual adjustments
+
+- Next: Project submission

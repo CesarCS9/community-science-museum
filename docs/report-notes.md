@@ -11,3 +11,11 @@ Notes and reflections will be added throughout the project to support the final 
 - Small UX decisions improved clarity and navigation
 - Accessibility testing helped refine form labels and navigation elements
 
+## Final Reflections
+
+- Working mobile-first helped prevent major responsive issues later
+- Reusable components simplified styling across pages
+- Debugging responsive problems improved understanding of CSS structure and specificity
+- Testing with accessibility tools helped identify issues not visible during development
+- Project organization at the beginning made development smoother compared to previous projects
+

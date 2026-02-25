@@ -24,3 +24,11 @@
 
 - Improved accessibility using testing tools (WAVE)
 
+## Final Decisions – Week 4
+
+- Removed redundant CTA from navigation to improve clarity
+- Adjusted some background colours compared to the prototype for better readability
+- Prioritized usability and responsiveness over strict visual accuracy to the prototype
+- Improved accessibility using semantic HTML and ARIA attributes
+- Optimized images and added lazy loading for performance
+- Decided to stop adding new features and focus on stability and testing before submission
