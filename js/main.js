@@ -5,6 +5,9 @@
 const menuButton = document.querySelector('#menu-button');
 const mainMenu = document.querySelector('#main-menu');
 
+const contactForm = document.querySelector('.contact-form');
+const toast = document.querySelector('#toast');
+
 
 // ======= MENU BURGER ======= //
 
@@ -49,3 +52,33 @@ window.addEventListener ('scroll', () => {
         closeMenu();
     }
 });
+
+
+// ======= CONTACT FORM & TOAST ======= //
+
+function showToast (message, type) {
+    toast.textContent = message;
+    toast.className = `toast ${type}`;
+
+    setTimeout(() => {
+        toast.className = 'toast';
+    }, 3000);
+}
+
+if (contactForm && toast) {
+    contactForm.addEventListener ('submit', (event) => {
+        event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+
+            showToast('Please complete the required fields', 'error');
+
+            return;
+        }
+
+        showToast( 'Message sent! We’ll get back to you soon', 'success');
+
+        contactForm.reset();
+    });
+}

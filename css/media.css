@@ -40,6 +40,10 @@
   .about-contact {
     margin: 2rem 3rem;
   }
+
+  .toast {
+        width: 450px;
+    }
 }
 
 /*================ DESKTOP ================*/

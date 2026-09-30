@@ -68,3 +68,33 @@
     border: none;
 }
 
+.toast {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.toast.success {
+    background-color: #2e8b57;
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast.error {
+    background-color: #d9534f;
+    opacity: 1;
+    visibility: visible;
+}
+
