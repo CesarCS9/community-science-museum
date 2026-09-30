@@ -1,62 +1,93 @@
 # Community Science Museum
 
-Semester Project 1 – Front-end Development
+A responsive website for a fictional science museum designed for families and young visitors.
 
-This project is part of Semester Project 1 and focuses on planning, designing,
-and developing a responsive website for the Community Science Museum.
+## Description
 
-----------------------------------------------------
+This project was created as part of Semester Project 1 for the Front-end Development course at Noroff.
+
+The goal was to create an accessible and engaging website that encourages curiosity and interest in science through interactive design.
+
+The website includes:
+
+- Responsive design for mobile, tablet and desktop
+- Accessible navigation
+- Information about exhibitions and events
+- Reusable cards and CTA sections
+- Contact form
+- JavaScript mobile navigation
+
+## Built With
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- Mobile-first methodology
+- Figma
 
 ## Live Website
+
 https://cesarcs9.github.io/community-science-museum/
 
 ## GitHub Repository
+
 https://github.com/CesarCS9/community-science-museum
 
----
+## Getting Started
 
-## Project Goal
-The goal of this project was to create an accessible and engaging website aimed at families and young visitors, encouraging curiosity and interest in science through interactive design.
+### Installing
 
-----------------------------------------------------
+Clone the repository:
 
-## Built With
-- HTML
-- CSS
-- Mobile-first methodology
-- Figma (design and prototyping)
+```bash
+git clone https://github.com/CesarCS9/community-science-museum.git
+```
 
-----------------------------------------------------
+### Running
 
-## Features
-- Responsive design (mobile, tablet, desktop)
-- Accessible navigation
-- Reusable components (cards and CTA sections)
-- Optimized images and performance improvements
+This project does not require any dependencies or installation.
 
-----------------------------------------------------
+Open `index.html` in a browser to run the project locally.
 
-## Design Process
-Wireframes and prototypes were created in Figma before development.
+You can also visit the live website:
 
-Figma workspace:
-https://www.figma.com/design/WZoHzgjWVJ0sTjk0vZUx3p/Community-Science-Museum?node-id=166-2&p=f&t=xHQvt07YHuYBpdRa-0
+https://cesarcs9.github.io/community-science-museum/
 
-----------------------------------------------------
+## Improvements
+
+As part of Portfolio 1, the project was revisited and improved using the JavaScript skills gained after completing the original project.
+
+### JavaScript Navigation
+
+The original CSS checkbox-based mobile menu was replaced with a JavaScript-powered navigation menu.
+
+The menu can now be opened and closed using JavaScript, including feedback through `aria-expanded`.
+
+### Contact Form
+
+JavaScript validation and toast notifications were added to the contact form.
+
+Users now receive feedback when the form is submitted successfully or when required fields are incomplete or invalid.
 
 ## Validation & Testing
+
 - HTML validated
 - CSS validated
 - Accessibility checked with WAVE
 - Lighthouse testing performed
 
-----------------------------------------------------
-
 ## AI Usage
-AI tools were used only as learning support according to the assignment AI policy.  
-See **AI_LOG.md** for details.
 
-----------------------------------------------------
+AI tools were used only as learning support according to the assignment AI policy.
+
+See `AI_LOG.md` for details.
 
 ## Author
-Cesar Andres Castillo Sanabria — Front-end Development Student (Noroff)
+
+Cesar Andres Castillo Sanabria
+
+[GitHub](https://github.com/CesarCS9)
+
+## Acknowledgments
+
+- Noroff Front-end Development course
