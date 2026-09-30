@@ -1,17 +1,16 @@
 /*================ TABLET ================*/
 
-@media (min-width: 768px){
-    .logo {
+@media (min-width: 768px) {
+  .logo {
     font-size: 1.5rem;
   }
 
-  .footer-layout p{
+  .footer-layout p {
     font-size: 0.9rem;
-}
-
+  }
 
   /*## EXHIBITION PAGE ##*/
-    .exhibitions-container {
+  .exhibitions-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -19,20 +18,18 @@
 
   /*## VISIT PAGE ##*/
 
-  .visit-location{
+  .visit-location {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items:start;
+    align-items: start;
     padding: 3rem 0;
-
   }
 
-
-  .visit-location h2{
+  .visit-location h2 {
     margin-top: 0;
   }
 
-  .location-map img{
+  .location-map img {
     border-bottom: none;
     padding: 0;
     margin: 0;
@@ -43,183 +40,189 @@
   .about-contact {
     margin: 2rem 3rem;
   }
-
 }
-
 
 /*================ DESKTOP ================*/
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
+  /*HOME PAGE*/
 
-    /*HOME PAGE*/
+  .menu-icon {
+    display: none;
+  }
 
-    .menu-icon{
-        display: none;
-    }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem 2rem;
-    }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: auto;
+    padding: 0 120px 0 0;
+    background: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    transition: none;
+  }
 
-    .nav-links{
-        display: flex;
-        align-items: center;
-        padding-right: 120px;
-        
-    }
+  .nav-links a.active {
+    color: #ff6b6b;
+  }
 
-    .nav-links a.active {
-        color: #FF6B6B;
-    }
+  .nav-links a {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.3px;
+  }
 
-    .nav-links a {
-        position: relative;
-        display: inline-block;
-        letter-spacing: 0.3px;
-    }
+  .nav-links a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff6b6b;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
 
+  .nav-links a:hover:after {
+    width: 100%;
+  }
 
-    .nav-links a:after{
-        content: "";
-        position: absolute;
-        background-color: #FF6B6B;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -10px;
-        transition: 0.3s;
-    }
+  .btn {
+    display: inline-block;
+    position: relative;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border-radius: 80px 0 80px 0;
+    font-family: "Lexend";
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      transform 0.2s ease;
+  }
 
-    .nav-links a:hover:after{
-        width: 100%;
-    }
+  .btn:hover {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+  }
 
-    .btn{
-        display: inline-block;
-        position: relative;
-        padding: 0.75rem 1.5rem;
-        text-decoration: none;
-        background-color: var(--color-primary);
-        color: var(--color-black);
-        border-radius: 80px 0 80px 0;
-        font-family: 'Lexend';
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;;
-    }
+  .home-features-header {
+    padding: 3rem;
+  }
 
-    .btn:hover{
-        background-color: var(--color-dark);
-        color: var(--color-white);
-    }
-    
+  .home-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 2rem;
+  }
 
-    .home-features-header{
-        padding: 3rem;
-    }
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 
-    .home-features{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: stretch;
-        gap: 2rem;
-    }
+  .feature-home-card {
+    margin: 0;
+  }
 
-    .feature-item{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+  .home-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .feature-home-card{
-        margin: 0;
-    }
+  .home-about-thumbnail,
+  .visitor-info {
+    padding: 3rem;
+  }
 
-    .home-info{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .cta-content {
+    padding: 5rem 0;
+  }
 
-    .home-about-thumbnail, .visitor-info{
-        padding: 3rem;
-    }
+  /*### EXHIBITION PAGE */
 
-    .cta-content{
-        padding: 5rem 0;
-    }
+  .exhibitions-section {
+    padding: 2.5rem;
+  }
 
-    /*### EXHIBITION PAGE */
+  .exhibitions-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 2rem;
+    gap: 3.5rem;
+  }
 
-    .exhibitions-section{
-        padding: 2.5rem;
-    }
+  .museum-benefits {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+  }
 
-    .exhibitions-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 3rem 2rem;
-        gap: 3.5rem;
-    }
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
 
-    .museum-benefits{
-        display: flex;
-        align-items: center;
-        padding: 3rem 0;
-    }
+  .exhibitions-cta {
+    padding: 2.5rem;
+  }
 
-    .benefits-list{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5rem;
-    }
-
-    .exhibitions-cta{
-        padding: 2.5rem;
-    }
-
-    .exhibitions-cta .cta-description {
+  .exhibitions-cta .cta-description {
     text-align: left;
-    }
+  }
 
-    .cta-top{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
-        gap: 3rem;
-    }
+  .cta-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 3rem;
+  }
 
-    .cta-description{
-        padding: 0;
-    }
+  .cta-description {
+    padding: 0;
+  }
 
-    .cta-description p{
-        padding: 0;
-        
-    }
+  .cta-description p {
+    padding: 0;
+  }
 
-    .cta-media {
+  .cta-media {
     display: flex;
     justify-content: flex-start;
-    }
+  }
 
-    .cta-media img{
-        width: 80%;
-    }
+  .cta-media img {
+    width: 80%;
+  }
 
-    .exhibitions-cta .cta-bottom {
+  .exhibitions-cta .cta-bottom {
     position: relative;
     padding-top: 3rem;
-    }
+  }
 
-/*### EXPLORE PAGE ###*/
+  /*### EXPLORE PAGE ###*/
 
-.event-card {
+  .event-card {
     display: grid;
     grid-template-columns: 180px 200px 1fr;
     gap: 1.5rem;
-    padding: 0 2rem; 
+    padding: 0 2rem;
     align-items: stretch;
   }
 
@@ -235,7 +238,7 @@
     padding: 1.5rem 1.5rem 1.5rem 0;
   }
 
-  .explore-cta{
+  .explore-cta {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -245,85 +248,86 @@
     padding: 3rem 1.5rem;
   }
 
-  .explore-cta img{
+  .explore-cta img {
     width: 320px;
   }
-  
-  .explore-cta h2{
+
+  .explore-cta h2 {
     font-size: 1.3rem;
   }
 
-  .explore-cta a{
+  .explore-cta a {
     margin-top: 10.5rem;
   }
 
-  .explore-benefits{
+  .explore-benefits {
     padding: 0.5rem 0 0 1.5rem;
   }
-   
+
   /*### VISIT PAGE ###*/
 
   .visit-location {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+  }
 
-.location-map img {
+  .location-map img {
     width: 100%;
     max-width: 600px;
-}
+  }
 
-  .transport-grid{
+  .transport-grid {
     display: flex;
     flex-direction: row;
   }
 
-  .visit-info{
+  .visit-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   /*### ABOUT US ### */
-  .about-learning, .about-mission{
+  .about-learning,
+  .about-mission {
     padding: 3rem 3rem;
   }
-  
 }
-
 
 /*================ ULTRAWIDE ================*/
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
+  .home-features-header,
+  .explore-events,
+  .visit-location-wrapper,
+  .visit-transport {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
-    .home-features-header, .explore-events, .visit-location-wrapper, .visit-transport{
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+  .exhibitions-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 
-    .exhibitions-container {
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-    }
+  .explore-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .explore-benefits{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .explore-benefits li {
+    list-style: none;
+  }
 
-    .explore-benefits li{
-        list-style: none;
-    }
+  .about-mission,
+  .about-learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-mission, .about-learning{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-section img {
-        height: 300px;
-        
-    }
+  .cta-section img {
+    height: 300px;
+  }
 }

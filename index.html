@@ -1,108 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Community Science Museum</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/media.css">
-</head>
-<body>
-  <header class="hero hero-home">
-    <nav aria-label="Main navigation">
-      <a href="index.html" aria-label="Go to homepage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Community Science Museum</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="hero hero-home">
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-label="Go to homepage">
+          <span class="logo">
+            Community science <span class="highlight">museum</span>
+          </span>
+        </a>
+        <button
+          type="button"
+          class="menu-icon"
+          id="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links" id="main-menu">
+          <li>
+            <a href="index.html" class="active" aria-current="page">Home</a>
+          </li>
+          <li><a href="pages/exhibitions.html">Exhibitions</a></li>
+          <li><a href="pages/explore.html">Explore</a></li>
+          <li><a href="pages/visit.html">Visit</a></li>
+          <li><a href="pages/about.html">About us</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <h1>
+          <span class="highlight">Explore</span>
+          <span>science together</span>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="home-features-header">
+        <h2>Discover the museum</h2>
+        <div class="home-features">
+          <div class="feature-item">
+            <a class="feature-home-card" href="pages/exhibitions.html">
+              <img
+                src="assets/images/home/home-card-exhibition.jpg"
+                alt="Child painting with a virtual reality headset"
+                loading="lazy"
+              />
+              <h3>Interactive exhibitions</h3>
+            </a>
+            <p>Explore hands on exhibits that bring science to life</p>
+          </div>
+          <div class="feature-item">
+            <a
+              class="feature-home-card-explore feature-home-card"
+              href="pages/explore.html"
+            >
+              <img
+                src="assets/images/home/home-card-explore.jpg"
+                alt="hands of a child playing with a wooden toy"
+                loading="lazy"
+              />
+              <h3>Learn by playing</h3>
+            </a>
+            <p>Discover science through fun activities and experiments</p>
+          </div>
+          <div class="feature-item">
+            <a
+              class="feature-home-card-visit feature-home-card"
+              href="pages/visit.html"
+            >
+              <img
+                src="assets/images/home/home-card-visit.jpg"
+                alt="Modern museum building with a colorful and large sign"
+                loading="lazy"
+              />
+              <h3>Plan your visit</h3>
+            </a>
+            <p>Find opening hours, location and visitor information</p>
+          </div>
+        </div>
+      </section>
+      <section class="home-info">
+        <div class="home-about-thumbnail">
+          <img
+            src="assets/images/home/home-thumbnail-about.jpg"
+            alt="Large museum with a classic architecture with a person looking at an elephant collection"
+            loading="lazy"
+          />
+          <h3>About the museum</h3>
+          <p>
+            The Community Science Museum is a place where children and families
+            explore science together through interactive exhibits and hands on
+            learning
+          </p>
+          <a href="pages/about.html" class="btn"
+            >Read more<span class="visually-hidden">about the museum</span></a
+          >
+        </div>
+        <div class="visitor-info">
+          <div class="opening-hours">
+            <h3>Opening hours</h3>
+            <p>Tuesday-Thursday: 10:00-16:00</p>
+            <p>Friday: 10:00-19:00</p>
+            <p>Saturday-Sunday: 09:00-16:00</p>
+          </div>
+          <div class="location-info">
+            <h3>Location</h3>
+            <p>Community Science Museum is located at:</p>
+            <p>Galileo Avenue 8</p>
+            <p>0001 Oslo, Norway</p>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="cta-content">
+          <h4>Discover science like never before</h4>
+          <p>Visit the Community Science Museum with your family</p>
+          <a href="pages/explore.html" class="btn">Explore the museum</a>
+        </div>
+        <img
+          src="assets/images/home/home-decorative-image.jpg"
+          alt="Abstract colorful image resembling liquid bubbles under light"
+          loading="lazy"
+        />
+      </section>
+    </main>
+    <footer>
+      <div class="footer-layout">
         <span class="logo">
-          Community science <span class="highlight">museum</span>
+          Community Science <span class="highlight">museum</span>
         </span>
-      </a>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">
-        <span class="visually-hidden">Toggle navigation menu</span>
-        <i class="fa-solid fa-bars" aria-hidden="true" style="color: #000000;"></i>
-      </label>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active" aria-current="page" >Home</a></li>
-        <li><a href="pages/exhibitions.html">Exhibitions</a></li>
-        <li><a href="pages/explore.html">Explore</a></li>
-        <li><a href="pages/visit.html">Visit</a></li>
-        <li><a href="pages/about.html">About us</a></li>
-      </ul>
-    </nav>
-    <div class="hero-text">
-      <h1>
-        <span class="highlight">Explore</span>
-        <span>science together</span>
-      </h1>
-    </div>
-  </header>
-  <main>
-    <section class="home-features-header">
-      <h2>Discover the museum</h2>
-      <div class="home-features">
-        <div class="feature-item">
-          <a class="feature-home-card" href="pages/exhibitions.html">
-            <img src="assets/images/home/home-card-exhibition.jpg" alt="Child painting with a virtual reality headset" loading="lazy">
-            <h3>Interactive exhibitions</h3>
-          </a>
-          <p>Explore hands on exhibits that bring science to life</p>
-        </div>
-        <div class="feature-item">
-          <a class="feature-home-card-explore feature-home-card" href="pages/explore.html">
-            <img src="assets/images/home/home-card-explore.jpg" alt="hands of a child playing with a wooden toy" loading="lazy">
-            <h3>Learn by playing</h3>
-          </a>
-          <p>Discover science through fun activities and experiments</p>
-        </div>
-        <div class="feature-item">
-          <a class="feature-home-card-visit feature-home-card" href="pages/visit.html">
-            <img src="assets/images/home/home-card-visit.jpg" alt="Modern museum building with a colorful and large sign" loading="lazy">
-            <h3>Plan your visit</h3>
-          </a>
-          <p>Find opening hours, location and visitor information</p>
-        </div>
+        <p>&copy; 2026 Community science museum. All rights reserved.</p>
       </div>
-    </section>
-    <section class="home-info">
-      <div class="home-about-thumbnail">
-        <img src="assets/images/home/home-thumbnail-about.jpg" alt="Large museum with a classic architecture with a person looking at an elephant collection" loading="lazy">
-        <h3>About the museum</h3>
-        <p>The Community Science Museum is a place where children and families explore science together through interactive exhibits and hands on learning</p>
-        <a href="pages/about.html" class="btn">Read more<span class="visually-hidden">about the museum</span></a>
-      </div>
-      <div class="visitor-info">
-        <div class="opening-hours">
-          <h3>Opening hours</h3>
-          <p>Tuesday-Thursday: 10:00-16:00</p>
-          <p>Friday: 10:00-19:00</p>
-          <p>Saturday-Sunday: 09:00-16:00</p>
-        </div>
-        <div class="location-info">
-          <h3>Location</h3>
-          <p>Community Science Museum is located at:</p>
-          <p>Galileo Avenue 8</p>
-          <p>0001 Oslo, Norway</p>
-        </div>
-      </div>
-    </section>
-    <section class="cta-section">
-      <div class="cta-content ">
-        <h4>Discover science like never before</h4>
-        <p>Visit the Community Science Museum with your family</p>
-        <a href="pages/explore.html" class="btn">Explore the museum</a>
-      </div>
-      <img src="assets/images/home/home-decorative-image.jpg" alt="Abstract colorful image resembling liquid bubbles under light" loading="lazy">
-    </section>
-  </main>
-  <footer>
-    <div class="footer-layout">
-      <span class="logo">
-        Community Science <span class="highlight">museum</span>
-      </span>
-      <p>&copy; 2026 Community science museum. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

@@ -1,123 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Visit | Community Science Museum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/visit.css">
-    <link rel="stylesheet" href="../css/media.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/visit.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
     <header class="hero hero-visit">
-        <nav aria-label="Main navigation">
+      <nav aria-label="Main navigation">
         <a href="../index.html">
-            <span class="logo">
-                Community science <span class="highlight">museum</span>
-            </span>
+          <span class="logo">
+            Community science <span class="highlight">museum</span>
+          </span>
         </a>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <span class="visually-hidden">Toggle navigation menu</span>
-            <i class="fa-solid fa-bars" aria-hidden="true" style="color: #000000;"></i>
-        </label>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="exhibitions.html">Exhibitions</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="visit.html" class="active" aria-current="page" >Visit</a></li>
-            <li><a href="about.html">About us</a></li>
+        <button
+          type="button"
+          class="menu-icon"
+          id="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <ul class="nav-links" id="main-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li>
+            <a href="visit.html" class="active" aria-current="page">Visit</a>
+          </li>
+          <li><a href="about.html">About us</a></li>
         </ul>
-        </nav>
-        <div class="hero-text">
-            <h1>
-                <span class="highlight">Visit</span>
-                <span>the museum</span>
-            </h1>
-        </div>
+      </nav>
+      <div class="hero-text">
+        <h1>
+          <span class="highlight">Visit</span>
+          <span>the museum</span>
+        </h1>
+      </div>
     </header>
     <main>
-        <section class="visit-location-wrapper">
-            <div class="visit-location">
-                <div class="location-content">
-                    <h2>Location</h2>
-                    <p>The Community Science Museum is located in the city centre of Oslo, with easy access by public transport and nearby facilities for families and school groups.</p>
-                    <p>Galileo Avenue 8 - 0001 Oslo, Norway</p>
-                </div>
-                <div class="location-map">
-                    <img src="../assets/images/visit/visit-map.jpg" alt="Map of community science museum in Oslo" loading="lazy">
-                </div>
-            </div>
-        </section>
-        <section class="visit-transport">
-            <h2>How to get there</h2>
-            <div class="transport-grid">
-                <div class="transport-card">
-                    <h3>Public transport</h3>
-                    <p>Easily accessible by metro, tram, and bus. The museum is a short walk from nearby public transport stops in central Oslo</p>
-                    <img src="../assets/images/visit/visit-get-public-transport.jpg" alt="Public transportation tram in a European city" loading="lazy">
-                </div>
-                <div class="transport-card">
-                    <h3>Parking</h3>
-                    <p>Limited street parking is available nearby. Several public parking garages can be found within walking distance of the museum</p>
-                    <img src="../assets/images/visit/visit-get-parking.jpg" alt="Drone view of cars parked in a parking lot" loading="lazy">
-                </div>
-                <div class="transport-card">
-                    <h3>School groups</h3>
-                    <p>A designated drop-off area is available for school groups and guided visits, making arrival safe and convenient</p>
-                    <img src="../assets/images/visit/visit-get-school-group.jpg" alt="Students sitting inside a school bus" loading="lazy">
-                </div>
-            </div>
-        </section>
-        <section class="visit-info">
-            <div class="visit-services">
-                <h2>Services & facilities</h2>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-mug-saucer" aria-hidden="true" style="color: #000000;"></i>
-                        <p>Enjoy food and drinks during your visit in a our Cafe</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-lock" aria-hidden="true" style="color: #000000;"></i>
-                        <p>Storage available for coats and bags</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-headphones" aria-hidden="true" style="color: #000000;"></i>
-                        <p>Guided tours available for schools and groups</p>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-accessible-icon" aria-hidden="true" style="color: #000000;"></i>
-                        <p>Fully wheelchair accessible with accessible restrooms</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bag-shopping" aria-hidden="true" style="color: #000000;"></i>
-                        <p>Take home science-themed gifts and souvenirs from our shop</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="visit-hours">
-                <h2>Opening hours</h2>
-                <p>Tuesday-Thursday: 10:00-16:00</p>
-                <p>Friday: 10:00-19:00</p>
-                <p>Saturday-Sunday: 09:00-16:00</p>
-                <p>Closed on Mondays</p>
-            </div>
-        </section>
-        <section class="cta-section visit-cta">
-            <h2>Visit the Community Science Museum</h2>
-            <a href="about.html" class="btn btn-coral">About us</a>
-            <img src="../assets/images/visit/visit-decorative-image.jpg" alt="Phases of the moon during a lunar eclipse" loading="lazy">
-        </section>
+      <section class="visit-location-wrapper">
+        <div class="visit-location">
+          <div class="location-content">
+            <h2>Location</h2>
+            <p>
+              The Community Science Museum is located in the city centre of
+              Oslo, with easy access by public transport and nearby facilities
+              for families and school groups.
+            </p>
+            <p>Galileo Avenue 8 - 0001 Oslo, Norway</p>
+          </div>
+          <div class="location-map">
+            <img
+              src="../assets/images/visit/visit-map.jpg"
+              alt="Map of community science museum in Oslo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="visit-transport">
+        <h2>How to get there</h2>
+        <div class="transport-grid">
+          <div class="transport-card">
+            <h3>Public transport</h3>
+            <p>
+              Easily accessible by metro, tram, and bus. The museum is a short
+              walk from nearby public transport stops in central Oslo
+            </p>
+            <img
+              src="../assets/images/visit/visit-get-public-transport.jpg"
+              alt="Public transportation tram in a European city"
+              loading="lazy"
+            />
+          </div>
+          <div class="transport-card">
+            <h3>Parking</h3>
+            <p>
+              Limited street parking is available nearby. Several public parking
+              garages can be found within walking distance of the museum
+            </p>
+            <img
+              src="../assets/images/visit/visit-get-parking.jpg"
+              alt="Drone view of cars parked in a parking lot"
+              loading="lazy"
+            />
+          </div>
+          <div class="transport-card">
+            <h3>School groups</h3>
+            <p>
+              A designated drop-off area is available for school groups and
+              guided visits, making arrival safe and convenient
+            </p>
+            <img
+              src="../assets/images/visit/visit-get-school-group.jpg"
+              alt="Students sitting inside a school bus"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="visit-info">
+        <div class="visit-services">
+          <h2>Services & facilities</h2>
+          <ul>
+            <li>
+              <i
+                class="fa-solid fa-mug-saucer"
+                aria-hidden="true"
+                style="color: #000000"
+              ></i>
+              <p>Enjoy food and drinks during your visit in a our Cafe</p>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-lock"
+                aria-hidden="true"
+                style="color: #000000"
+              ></i>
+              <p>Storage available for coats and bags</p>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-headphones"
+                aria-hidden="true"
+                style="color: #000000"
+              ></i>
+              <p>Guided tours available for schools and groups</p>
+            </li>
+            <li>
+              <i
+                class="fa-brands fa-accessible-icon"
+                aria-hidden="true"
+                style="color: #000000"
+              ></i>
+              <p>Fully wheelchair accessible with accessible restrooms</p>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-bag-shopping"
+                aria-hidden="true"
+                style="color: #000000"
+              ></i>
+              <p>Take home science-themed gifts and souvenirs from our shop</p>
+            </li>
+          </ul>
+        </div>
+        <div class="visit-hours">
+          <h2>Opening hours</h2>
+          <p>Tuesday-Thursday: 10:00-16:00</p>
+          <p>Friday: 10:00-19:00</p>
+          <p>Saturday-Sunday: 09:00-16:00</p>
+          <p>Closed on Mondays</p>
+        </div>
+      </section>
+      <section class="cta-section visit-cta">
+        <h2>Visit the Community Science Museum</h2>
+        <a href="about.html" class="btn btn-coral">About us</a>
+        <img
+          src="../assets/images/visit/visit-decorative-image.jpg"
+          alt="Phases of the moon during a lunar eclipse"
+          loading="lazy"
+        />
+      </section>
     </main>
     <footer>
-        <div class="footer-layout">
+      <div class="footer-layout">
         <span class="logo">
-            Community Science <span class="highlight">museum</span>
+          Community Science <span class="highlight">museum</span>
         </span>
         <p>&copy; 2026 Community science museum. All rights reserved.</p>
-        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

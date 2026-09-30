@@ -1,119 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Exhibitions | Community Science Museum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/exhibitions.css">
-    <link rel="stylesheet" href="../css/media.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Questrial&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/exhibitions.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
     <header class="hero hero-exhibitions">
-        <nav aria-label="Main navigation">
-            <a href="../index.html">
-                <span class="logo">
-                    Community science <span class="highlight">museum</span>
-                </span>
-            </a>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <span class="visually-hidden">Toggle navigation menu</span>
-                <i class="fa-solid fa-bars" aria-hidden="true" style="color: #000000;"></i>
-            </label>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="exhibitions.html" class="active" aria-current="page">Exhibitions</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="about.html">About us</a></li>
-            </ul>
-        </nav>
-        <div class="hero-text">
-            <h1>
-                <span class="highlight">Experience</span>
-                <span>science exhibitions</span>
-            </h1>
-        </div>
+      <nav aria-label="Main navigation">
+        <a href="../index.html">
+          <span class="logo">
+            Community science <span class="highlight">museum</span>
+          </span>
+        </a>
+        <button
+          type="button"
+          class="menu-icon"
+          id="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <ul class="nav-links" id="main-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="exhibitions.html" class="active" aria-current="page"
+              >Exhibitions</a
+            >
+          </li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <h1>
+          <span class="highlight">Experience</span>
+          <span>science exhibitions</span>
+        </h1>
+      </div>
     </header>
-  <main>
-    <section class="exhibitions-section">
+    <main>
+      <section class="exhibitions-section">
         <h2>Exhibitions</h2>
         <div class="exhibitions-container">
-            <div class="exhibition-card">
-                <img src="../assets/images/exhibition/exhibit-dinosaurs.jpg" alt="Interior of museum with suspended whale skeleton exhibit" loading="lazy">
-                <h3>Dinosaurs</h3>
-                <p>Step back in time and discover how dinosaurs lived, moved, and became fossils</p>
-            </div>
-            <div class="exhibition-card">
-                <img src="../assets/images/exhibition/exhibit-space.jpg" alt="Satellite orbiting above Earths atmosphere" loading="lazy">
-                <h3>Space & Astronomy</h3>
-                <p>Explore planets, stars, and the wonders of our universe through interactive displays</p>
-            </div>
-            <div class="exhibition-card">
-                <img src="../assets/images/exhibition/exhibit-robotic.jpg" alt="Person wearing virtual reality headset" loading="lazy">
-                <h3>Robotics & AI</h3>
-                <p>Learn how robots work and discover how artificial intelligence is shaping our future</p>
-            </div>
-            <div class="exhibition-card">
-                <img src="../assets/images/exhibition/exhibit-body.jpg" alt="Medical mannequin displaying human anatomy" loading="lazy">
-                <h3>The Human Body</h3>
-                <p>Discover how the human body works and learn about biology in a fun and simple way</p>
-            </div>
-            <div class="exhibition-card">
-                <img src="../assets/images/exhibition/exhibit-environment.jpg" alt="Tropical white flowers with yellow center on green foliage" loading="lazy">
-                <h3>Ecology & Environment</h3>
-                <p>Learn about nature, sustainability, and how we can protect our planet together</p>
-            </div>
-            <div class="exhibition-card">
-                <img src="../assets/images/exhibition/exhibit-experiments.jpg" alt="Scientist looking through a microscope in a laboratory" loading="lazy">
-                <h3>Hands on Experiments</h3>
-                <p>Take part in exciting experiments and learn science by doing</p>
-            </div>
+          <div class="exhibition-card">
+            <img
+              src="../assets/images/exhibition/exhibit-dinosaurs.jpg"
+              alt="Interior of museum with suspended whale skeleton exhibit"
+              loading="lazy"
+            />
+            <h3>Dinosaurs</h3>
+            <p>
+              Step back in time and discover how dinosaurs lived, moved, and
+              became fossils
+            </p>
+          </div>
+          <div class="exhibition-card">
+            <img
+              src="../assets/images/exhibition/exhibit-space.jpg"
+              alt="Satellite orbiting above Earths atmosphere"
+              loading="lazy"
+            />
+            <h3>Space & Astronomy</h3>
+            <p>
+              Explore planets, stars, and the wonders of our universe through
+              interactive displays
+            </p>
+          </div>
+          <div class="exhibition-card">
+            <img
+              src="../assets/images/exhibition/exhibit-robotic.jpg"
+              alt="Person wearing virtual reality headset"
+              loading="lazy"
+            />
+            <h3>Robotics & AI</h3>
+            <p>
+              Learn how robots work and discover how artificial intelligence is
+              shaping our future
+            </p>
+          </div>
+          <div class="exhibition-card">
+            <img
+              src="../assets/images/exhibition/exhibit-body.jpg"
+              alt="Medical mannequin displaying human anatomy"
+              loading="lazy"
+            />
+            <h3>The Human Body</h3>
+            <p>
+              Discover how the human body works and learn about biology in a fun
+              and simple way
+            </p>
+          </div>
+          <div class="exhibition-card">
+            <img
+              src="../assets/images/exhibition/exhibit-environment.jpg"
+              alt="Tropical white flowers with yellow center on green foliage"
+              loading="lazy"
+            />
+            <h3>Ecology & Environment</h3>
+            <p>
+              Learn about nature, sustainability, and how we can protect our
+              planet together
+            </p>
+          </div>
+          <div class="exhibition-card">
+            <img
+              src="../assets/images/exhibition/exhibit-experiments.jpg"
+              alt="Scientist looking through a microscope in a laboratory"
+              loading="lazy"
+            />
+            <h3>Hands on Experiments</h3>
+            <p>Take part in exciting experiments and learn science by doing</p>
+          </div>
         </div>
-    </section>
-    <section class="museum-benefits">
+      </section>
+      <section class="museum-benefits">
         <h3>What can you do at the museum?</h3>
         <div class="benefits-list">
-            <div class="benefits-item">
-                <i class="fa-solid fa-hand" style="color: #000000;"></i>
-                <p>Hands on learning</p>
-            </div>
-            <div class="benefits-item">
-                <i class="fa-solid fa-people-group" style="color: #000000;"></i>
-                <p>Explore together</p>
-            </div>
-            <div class="benefits-item">
-                <i class="fa-solid fa-lightbulb" style="color: #000000;"></i>
-                <p>Learn through play</p>
-            </div>
+          <div class="benefits-item">
+            <i class="fa-solid fa-hand" style="color: #000000"></i>
+            <p>Hands on learning</p>
+          </div>
+          <div class="benefits-item">
+            <i class="fa-solid fa-people-group" style="color: #000000"></i>
+            <p>Explore together</p>
+          </div>
+          <div class="benefits-item">
+            <i class="fa-solid fa-lightbulb" style="color: #000000"></i>
+            <p>Learn through play</p>
+          </div>
         </div>
-    </section>
-    <section class="cta-section exhibitions-cta">
+      </section>
+      <section class="cta-section exhibitions-cta">
         <div class="cta-top">
-            <div class="cta-media">
-                <img src="../assets/images/exhibition/exhibit-thumbnail.jpg" alt="Child looking at mathematical formulas drawn on a board" loading="lazy">
-            </div>
-            <div class="cta-content cta-description">
-                <h3>A place to explore science together</h3>
-                <p>The Community Science Museum offers hands-on learning experiences for children and families of all ages</p>
-            </div>
+          <div class="cta-media">
+            <img
+              src="../assets/images/exhibition/exhibit-thumbnail.jpg"
+              alt="Child looking at mathematical formulas drawn on a board"
+              loading="lazy"
+            />
+          </div>
+          <div class="cta-content cta-description">
+            <h3>A place to explore science together</h3>
+            <p>
+              The Community Science Museum offers hands-on learning experiences
+              for children and families of all ages
+            </p>
+          </div>
         </div>
         <div class="cta-bottom">
-            <h4>Plan your visit today!</h4>
-            <a href="visit.html" class="btn btn-coral">Start planning</a>
+          <h4>Plan your visit today!</h4>
+          <a href="visit.html" class="btn btn-coral">Start planning</a>
         </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-layout">
-      <span class="logo">
-        Community Science <span class="highlight">museum</span>
-      </span>
-      <p>&copy; 2026 Community science museum. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-layout">
+        <span class="logo">
+          Community Science <span class="highlight">museum</span>
+        </span>
+        <p>&copy; 2026 Community science museum. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
